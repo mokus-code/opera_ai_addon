@@ -1,0 +1,8 @@
+<!-- Иконка 16x16 для расширения -->
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="16" height="16" fill="#667eea" rx="3"/>
+  <circle cx="5" cy="6" r="1" fill="white"/>
+  <circle cx="11" cy="6" r="1" fill="white"/>
+  <path d="M4 10 Q8 13 12 10" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <rect x="7" y="2" width="2" height="2" fill="white" rx="1"/>
+</svg>

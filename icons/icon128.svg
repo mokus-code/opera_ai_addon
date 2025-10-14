@@ -1,0 +1,37 @@
+<!-- Иконка 128x128 для расширения -->
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6fa8dc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" fill="url(#grad2)" rx="20" filter="url(#shadow)"/>
+  
+  <!-- Глаза -->
+  <circle cx="42" cy="48" r="8" fill="white"/>
+  <circle cx="86" cy="48" r="8" fill="white"/>
+  <circle cx="42" cy="48" r="4" fill="#333"/>
+  <circle cx="86" cy="48" r="4" fill="#333"/>
+  
+  <!-- Улыбка -->
+  <path d="M32 80 Q64 100 96 80" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Антенна/AI символ -->
+  <rect x="54" y="16" width="20" height="16" fill="white" rx="8"/>
+  <circle cx="64" cy="24" r="3" fill="#667eea"/>
+  <circle cx="60" cy="8" r="2" fill="white"/>
+  <circle cx="68" cy="8" r="2" fill="white"/>
+  <line x1="60" y1="10" x2="60" y2="16" stroke="white" stroke-width="2"/>
+  <line x1="68" y1="10" x2="68" y2="16" stroke="white" stroke-width="2"/>
+  
+  <!-- Дополнительные детали -->
+  <circle cx="20" cy="30" r="3" fill="white" opacity="0.6"/>
+  <circle cx="108" cy="30" r="3" fill="white" opacity="0.6"/>
+  <circle cx="20" cy="98" r="3" fill="white" opacity="0.6"/>
+  <circle cx="108" cy="98" r="3" fill="white" opacity="0.6"/>
+</svg>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Link Analyzer - Настройки</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h2>🤖 AI Link Analyzer</h2>
+      <p>Context menu settings</p>
+    </div>
+
+    <div class="popup-content">
+      <!-- Tabs for menu items -->
+      <div class="tabs-container">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="menu1">Item 1</button>
+          <button class="tab-btn" data-tab="menu2">Item 2</button>
+          <button class="tab-btn" data-tab="menu3">Item 3</button>
+          <button class="add-tab-btn" id="addTab">+</button>
+        </div>
+
+        <div class="tabs-content">
+          <!-- Menu Item 1 -->
+          <div class="tab-content active" id="menu1">
+            <div class="menu-config">
+              <div class="form-group menu-header">
+                <div class="menu-title-row">
+                  <label>Menu item title:</label>
+                  <button class="delete-menu-btn" data-menu="1" title="Delete this menu item">🗑️</button>
+                </div>
+                <input type="text" class="menu-title" placeholder="Summary" data-menu="1">
+              </div>
+              
+              <div class="form-group">
+                <label>AI Provider:</label>
+                <select class="ai-provider" data-menu="1">
+                  <option value="">Select provider...</option>
+                  <option value="openai">OpenAI (GPT)</option>
+                  <option value="claude">Anthropic (Claude)</option>
+                  <option value="gemini">Google (Gemini)</option>
+                  <option value="deepseek">DeepSeek</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>API Key:</label>
+                <input type="password" class="api-key" placeholder="Enter API key" data-menu="1">
+                <div class="form-help">
+                  <small class="api-key-help">Get API key from selected provider</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>AI Prompt:</label>
+                <textarea class="prompt" rows="4" placeholder="Analyze content and provide brief summary..." data-menu="1"></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" class="menu-enabled" data-menu="1" checked>
+                  Enable this menu item
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 2 -->
+          <div class="tab-content" id="menu2">
+            <div class="menu-config">
+              <div class="form-group menu-header">
+                <div class="menu-title-row">
+                  <label>Menu item title:</label>
+                  <button class="delete-menu-btn" data-menu="2" title="Delete this menu item">🗑️</button>
+                </div>
+                <input type="text" class="menu-title" placeholder="Translation" data-menu="2">
+              </div>
+              
+              <div class="form-group">
+                <label>AI Provider:</label>
+                <select class="ai-provider" data-menu="2">
+                  <option value="">Select provider...</option>
+                  <option value="openai">OpenAI (GPT)</option>
+                  <option value="claude">Anthropic (Claude)</option>
+                  <option value="gemini">Google (Gemini)</option>
+                  <option value="deepseek">DeepSeek</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>API Key:</label>
+                <input type="password" class="api-key" placeholder="Enter API key" data-menu="2">
+                <div class="form-help">
+                  <small class="api-key-help">Get API key from selected provider</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>AI Prompt:</label>
+                <textarea class="prompt" rows="4" placeholder="Translate to Spanish..." data-menu="2"></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" class="menu-enabled" data-menu="2" checked>
+                  Enable this menu item
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu Item 3 -->
+          <div class="tab-content" id="menu3">
+            <div class="menu-config">
+              <div class="form-group menu-header">
+                <div class="menu-title-row">
+                  <label>Menu item title:</label>
+                  <button class="delete-menu-btn" data-menu="3" title="Delete this menu item">🗑️</button>
+                </div>
+                <input type="text" class="menu-title" placeholder="Detailed Analysis" data-menu="3">
+              </div>
+              
+              <div class="form-group">
+                <label>AI Provider:</label>
+                <select class="ai-provider" data-menu="3">
+                  <option value="">Select provider...</option>
+                  <option value="openai">OpenAI (GPT)</option>
+                  <option value="claude">Anthropic (Claude)</option>
+                  <option value="gemini">Google (Gemini)</option>
+                  <option value="deepseek">DeepSeek</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>API Key:</label>
+                <input type="password" class="api-key" placeholder="Enter API key" data-menu="3">
+                <div class="form-help">
+                  <small class="api-key-help">Get API key from selected provider</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>AI Prompt:</label>
+                <textarea class="prompt" rows="4" placeholder="Analyze in detail..." data-menu="3"></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label>
+                  <input type="checkbox" class="menu-enabled" data-menu="3">
+                  Enable this menu item
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button id="saveBtn" class="btn-primary">Save All Settings</button>
+        <button id="testBtn" class="btn-secondary" disabled>Test Current</button>
+      </div>
+
+      <div id="status" class="status-message"></div>
+    </div>
+
+    <div class="popup-footer">
+      <div class="api-links">
+        <h4>Get API keys:</h4>
+        <ul>
+          <li><a href="https://platform.openai.com/api-keys" target="_blank">OpenAI API Keys</a></li>
+          <li><a href="https://console.anthropic.com/" target="_blank">Anthropic Console</a></li>
+          <li><a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+          <li><a href="https://platform.deepseek.com/api_keys" target="_blank">DeepSeek Platform</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
