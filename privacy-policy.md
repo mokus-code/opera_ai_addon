@@ -6,15 +6,17 @@
 
 AI Link Analyzer ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Chrome extension.
 
+**Important**: This extension sends data to third-party AI providers when you use its features. While we don't collect your data, the AI providers you choose will receive and process the content you analyze.
+
 ## Information We Collect
 
 ### Data Stored Locally
 - **API Keys**: Your AI provider API keys (OpenAI, Claude, Gemini, DeepSeek) are stored locally in your browser using Chrome's storage API
 - **Settings**: Your menu configurations, prompts, and preferences are stored locally in your browser
-- **No Personal Data**: We do not collect, store, or transmit any personal information about you
+- **No Personal Data Collection**: We do not collect, store, or transmit any personal information about you to our servers
 
-### Data Processed
-- **Selected Text**: When you select text on a webpage and use our extension, that text is sent to your chosen AI provider
+### Data Sent to AI Providers
+- **Selected Text**: When you select text on a webpage and use our extension, that text is sent to your chosen AI provider for analysis
 - **URLs**: When you analyze links, the URL is included in the request to your chosen AI provider
 - **Page Content**: When analyzing links, page content may be fetched and sent to your chosen AI provider
 
@@ -35,17 +37,23 @@ When you use the extension, your data is sent to the AI provider you have config
 
 **Important**: We do not control these third-party services. Please review their privacy policies to understand how they handle your data.
 
-### No Data Collection by Us
-- We do not collect or store any data on our servers
-- We do not share your data with any parties other than the AI providers you choose
-- We do not track your usage or behavior
+### Data Transmission
+- **To AI Providers**: Your selected text, URLs, and page content are transmitted to the AI provider you choose when you use the extension
+- **No Data Collection by Us**: We do not collect or store any data on our servers
+- **No Tracking**: We do not track your usage or behavior
+- **User Control**: Data is only sent to AI providers when you explicitly request analysis
 
 ## Data Storage and Security
 
+### Local Storage
 - All your settings and API keys are stored locally in your browser using Chrome's secure storage API
 - We do not have access to your stored data
 - Your data is not transmitted to our servers
+
+### Data Transmission Security
 - Data is only sent to AI providers when you explicitly use the extension features
+- All communications with AI providers use HTTPS encryption
+- We cannot control how AI providers store or process your data - please review their privacy policies
 
 ## Your Rights and Choices
 
@@ -82,4 +90,4 @@ This extension complies with:
 
 ---
 
-**Note**: This extension operates entirely locally and does not collect personal data. Your privacy and security are our top priorities.
+**Important Disclaimer**: While this extension does not collect personal data on our servers, it does transmit your selected content to third-party AI providers for analysis. We recommend reviewing the privacy policies of any AI providers you choose to use. Your privacy and security are our top priorities within the scope of our control.

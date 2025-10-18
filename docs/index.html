@@ -71,6 +71,10 @@
 
         <h2>Overview</h2>
         <p>AI Link Analyzer ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Chrome extension.</p>
+        
+        <div class="highlight">
+            <p><strong>Important</strong>: This extension sends data to third-party AI providers when you use its features. While we don't collect your data, the AI providers you choose will receive and process the content you analyze.</p>
+        </div>
 
         <h2>Information We Collect</h2>
         
@@ -78,19 +82,15 @@
         <ul>
             <li><strong>API Keys</strong>: Your AI provider API keys (OpenAI, Claude, Gemini, DeepSeek) are stored locally in your browser using Chrome's storage API</li>
             <li><strong>Settings</strong>: Your menu configurations, prompts, and preferences are stored locally in your browser</li>
-            <li><strong>No Personal Data</strong>: We do not collect, store, or transmit any personal information about you</li>
+            <li><strong>No Personal Data Collection</strong>: We do not collect, store, or transmit any personal information about you to our servers</li>
         </ul>
 
-        <h3>Data Processed</h3>
+        <h3>Data Sent to AI Providers</h3>
         <ul>
-            <li><strong>Selected Text</strong>: When you select text on a webpage and use our extension, that text is sent to your chosen AI provider</li>
+            <li><strong>Selected Text</strong>: When you select text on a webpage and use our extension, that text is sent to your chosen AI provider for analysis</li>
             <li><strong>URLs</strong>: When you analyze links, the URL is included in the request to your chosen AI provider</li>
             <li><strong>Page Content</strong>: When analyzing links, page content may be fetched and sent to your chosen AI provider</li>
         </ul>
-
-        <div class="highlight">
-            <p><strong>Important</strong>: All data processing happens locally in your browser or directly with your chosen AI provider. We never see or store your data on our servers.</p>
-        </div>
 
         <h2>How We Use Your Information</h2>
         <ul>
@@ -112,19 +112,28 @@
 
         <p><strong>Important</strong>: We do not control these third-party services. Please review their privacy policies to understand how they handle your data.</p>
 
-        <h3>No Data Collection by Us</h3>
+        <h3>Data Transmission</h3>
         <ul>
-            <li>We do not collect or store any data on our servers</li>
-            <li>We do not share your data with any parties other than the AI providers you choose</li>
-            <li>We do not track your usage or behavior</li>
+            <li><strong>To AI Providers</strong>: Your selected text, URLs, and page content are transmitted to the AI provider you choose when you use the extension</li>
+            <li><strong>No Data Collection by Us</strong>: We do not collect or store any data on our servers</li>
+            <li><strong>No Tracking</strong>: We do not track your usage or behavior</li>
+            <li><strong>User Control</strong>: Data is only sent to AI providers when you explicitly request analysis</li>
         </ul>
 
         <h2>Data Storage and Security</h2>
+        
+        <h3>Local Storage</h3>
         <ul>
             <li>All your settings and API keys are stored locally in your browser using Chrome's secure storage API</li>
             <li>We do not have access to your stored data</li>
             <li>Your data is not transmitted to our servers</li>
+        </ul>
+        
+        <h3>Data Transmission Security</h3>
+        <ul>
             <li>Data is only sent to AI providers when you explicitly use the extension features</li>
+            <li>All communications with AI providers use HTTPS encryption</li>
+            <li>We cannot control how AI providers store or process your data - please review their privacy policies</li>
         </ul>
 
         <h2>Your Rights and Choices</h2>
@@ -165,7 +174,7 @@
         </ul>
 
         <div class="highlight">
-            <p><strong>Note</strong>: This extension operates entirely locally and does not collect personal data. Your privacy and security are our top priorities.</p>
+            <p><strong>Important Disclaimer</strong>: While this extension does not collect personal data on our servers, it does transmit your selected content to third-party AI providers for analysis. We recommend reviewing the privacy policies of any AI providers you choose to use. Your privacy and security are our top priorities within the scope of our control.</p>
         </div>
     </div>
 </body>
